@@ -1,6 +1,4 @@
-package com.exp.factory.simplefactory;
-
-import com.exp.factory.simplefactory.IChart;
+package com.exp.factory;
 
 public class PieChart implements IChart {
 

@@ -1,4 +1,4 @@
-package com.exp.factory.simplefactory;
+package com.exp.factory;
 
 public class LineChart implements IChart {
 

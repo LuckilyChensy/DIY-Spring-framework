@@ -1,4 +1,4 @@
-package com.exp.factory.simplefactory;
+package com.exp.factory;
 
 public interface IChart {
     void display();

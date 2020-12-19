@@ -1,5 +1,7 @@
 package com.exp.factory.simplefactory;
 
+import com.exp.factory.IChart;
+
 public class ChartFactory {
 
 //    public static IChart getChart(String type){
@@ -18,9 +20,16 @@ public class ChartFactory {
 //
 //    }
 
-    public static IChart getChart(String className) throws Exception {
-        if(!(null == className || "".equals(className))){
-            return (IChart)Class.forName(className).newInstance();
+//    public static IChart getChart(String className) throws Exception {
+//        if(!(null == className || "".equals(className))){
+//            return (IChart)Class.forName(className).newInstance();
+//        }
+//        return null;
+//    }
+
+    public IChart getChart(Class<? extends IChart> clazz) throws Exception{
+        if(null != clazz){
+            return clazz.newInstance();
         }
         return null;
     }
