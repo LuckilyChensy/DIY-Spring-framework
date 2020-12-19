@@ -1,6 +1,8 @@
 package com.exp.factory;
 
 import com.exp.factory.simplefactory.ChartFactory;
+import com.exp.factory.simplefactory.IChart;
+import com.exp.tools.XMLUtil;
 import org.junit.jupiter.api.Test;
 
 public class TestClient {
@@ -15,6 +17,12 @@ public class TestClient {
         new ChartFactory().getChart("pie").display();
         new ChartFactory().getChart("line").display();
 
+    }
+
+    @Test
+    public void testMethod02() throws Exception {
+        String type = XMLUtil.getChartType();
+        ChartFactory.getChart(type).display();
     }
 
 }
