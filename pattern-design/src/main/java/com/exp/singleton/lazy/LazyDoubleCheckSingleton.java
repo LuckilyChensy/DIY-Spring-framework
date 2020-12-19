@@ -1,4 +1,4 @@
-package com.exp.singleton;
+package com.exp.singleton.lazy;
 
 public class LazyDoubleCheckSingleton {
 

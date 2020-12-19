@@ -1,6 +1,4 @@
-package com.exp.singleton;
-
-import java.util.concurrent.TimeUnit;
+package com.exp.singleton.lazy;
 
 public class LazySimpleSingleton {
 
